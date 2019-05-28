@@ -1,0 +1,35 @@
+<html> 
+
+<head>
+<title>Loan Prediction API</title>
+
+</head>
+
+<body>
+	<div style='text-align:center'>
+	 <img src="/static/logo.png" >
+		<p>Abdoulaye Maranga </p>
+	</div>
+	
+	<div style='text-align:center'>
+		
+		<h1 style='color:blue'>Loan Prediction Model</h1>
+	
+	<div>
+		<form action="/predict" method="post" enctype="multipart/form-data">
+			
+
+		   <input type="submit" value="Analyze you data"> {% if label %} <p><strong><u>Top 5 results</u></strong></p><table align="center"> 
+			<h2 {{ label | safe }}
+																																				<p></p><p></p>
+				<div>
+					<a href="/Download" target="_"> <input type="button" value="Download all"/> </a>
+				</div> {% endif %}
+			</h2>
+
+		</form>
+			
+	</div>
+</body>
+
+</html>
